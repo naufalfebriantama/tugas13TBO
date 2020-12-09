@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+<!-- my CSS -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <title>BELAJAR WEBSITE</title>
+    </head>
+
+    <body id="home" class="scrollspy">
+      <!-- nav -->
+      <div class="navbar-fixed">
+        <nav class="grey darken-3">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#home" class="brand-logo">MNF</a>
+              <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+               
+                <li><a href="#services">Materi</a></li>
+                <li><a href="#contact">Kontak Saya</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
+<!-- Sidenav -->
+<ul class="sidenav" id="mobile-nav">
+  
+  <li><a href="">Materi</a></li>
+  <li><a href="">Kontak Saya</a></li> 
+</ul>
+
+
+<!-- slider -->
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/slider/24.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3 class="light grey-text text-lighten-4">Mappatunru Production</h3>
+          <h5 class="light grey-text text-lighten-4">Salamaki To Pada Salama</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/slider/23.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3 class="light grey-text text-darken-4">Mappatunru Production</h3>
+          <h5 class="light grey-text text-darken-4">Taro Ada Taro Gau</h5>
+        </div>
+      </li>
+      <li>
+        <img src="img/slider/28.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3 class="light white-text text-darken-4">Mappatunru Production</h3>
+          <h5 class="light white-text text-darken-4">Makkiade' Na Malempu'</h5>
+        </div>
+      </li>
+    </ul>
+</div>
+
+
+
+    <!-- Servis -->
+    <section id="services" class="services grey lighten-3 scrollspy">
+      <div class="container">
+        <div class="row">
+          <h3 class="light center grey-text text-darken-3">Materi</h3>
+          <div class="col m12 s12">
+            <div class="card-panel center ">
+              <i class="material-icons medium">forum</i>
+              <h5>Pertemuan 13 TBO</h5>
+              <p>"Mesin Turing"</p>
+              <h5 class=" grey-text text-darken-3 left-align">Pengertian Mesin Turing</h5>
+              <p class="left-align">Mesin turing adalah suatu model yang sangat sederhana dari komputer. Konsep mesin turing pertama kali di kenalkan oleh Alan Turing pada tahun 1936 dalam papernya yang berjudul “On Computable Numbers, with an Application to the Entscheidungsproblem” .Konsep mesin turing inilah yang menjadi dasar dari teori komputabilitas.Mesin modern dapat digunakan untuk berbagai permasalahan matematis yang sederhana. Contoh perhitungan pada bilangan bulat, mengoreksi simbol, menghitung suatu fungsi bilangan bulat dan lain-lain. Makalah ini akan didesign suatu mesinturing yang akan menerima bahasa palindrome. Palindromeadalah suatu kata, kalimat yang jika dibaca dari depan ke belakang atau sebaliknya akan sama hasilnya. Akan dibuktikan juga bahwa jika suatu masalah dapat didukung oleh mesin turing satu pita maka dapat pula menerapkannya dengan mesin turing banyak pita</p>
+
+              <h5 class=" grey-text text-darken-3 left-align">Cara Kerja Mesin Turing</h5>
+              <p class="left-align">Mesin Turing :</p>
+              <p class="left-align">Pada PDA (Push Down Otomata) digunakan stack untuk menyimpan dan mengakses data inputan. Tetapi hal ini menyebabkan kemampuan kerja PDA yang terbatas karena pada prinsip stack,hanya data teratas yang bisa diakses. Ini menyebabkan keterbatasan PDA. Mesin turing menggunakan pita (tape) sebagai memori yang berbentuk array . Hal ini menyebabkan data pada pita dapat diakses dari mana saja.</p>
+
+              <p class="left-align">Spesifikasi Mesin Turing :</p>
+              <p class="left-align">1. Mesin turing memiliki pita berupa array sebagai memori yang dapat menyimpan sebuah simbol tunggal</p>
+              <p class="left-align">2. Mesin turing memiliki head sebagai penunjuk posisi yang sedang diakses pada pita</p>
+              <p class="left-align">3. Head dapat bergerak kekanan/kekiri pada pita sesuai fungsi transisi yang ditetapkan untuk membaca inputan</p>
+              <p class="left-align">4. Head juga dapat melakukan penulisan/ mengubah isi pita</p>
+
+              <p class="left-align">Prinsip Kerja mesin Turing :</p>
+              <p class="left-align">1. Lihat state semula dan simbol yang ditunjuk head</p>
+              <p class="left-align">2. Berdasarkan fungsi transisinya,tentukan:</p>
+              <p class="left-align">- State berikutnya</p>
+              <p class="left-align">- Lakukan penulisan ke pita</p>
+              <p class="left-align">- Gerakkan head ke kanan dan ke kiri</p>
+              <p class="left-align">3. Bila dari pasangan state dan simbol yang ditunjuk head tidak ada lagi fungsi transisinya,berarti mesin turing berhenti</p>
+              <p class="left-align">4. Bila mesin turing berhenti di dalam state final (F) , berarti input diterima. Sebaliknya jika mesin berhenti tidak pada state akhir,maka berarti inputan tersebut ditolak.</p>
+
+              <h5 class=" grey-text text-darken-3 left-align">Definisi Mesin Turing</h5>
+              <p class="left-align">Mesin turing didefinisikan sebagai 7 tuple M={ Q, S, G, S, F, Ь, ∆}</p>
+              <p class="left-align">Q: himpunan hingga state,</p>
+              <p class="left-align">S: alfabet input, </p>
+              <p class="left-align">G: simbol pada pita (meliputi pula blank)</p>
+              <p class="left-align">S: state awal, S Î Q</p>
+              <p class="left-align">Ь: simbol kosong (blank) (bukan bagian dari S )</p>
+              <p class="left-align">∆: fungsi transisi</p>
+              <p class="left-align">F: state akhir, F Î Q</p>
+
+              <h5 class=" grey-text text-darken-3 left-align">Contoh Mesin Turing Sederhana</h5>
+              <p class="left-align">Sebuah contoh mesin Turing dapat dibangun untuk melakukan komputasi sederhana yang didefinsikan seperti ini:</p>
+              <p class="left-align">Tentukan ada berapa angka 1 dalam sebuah string berbentuk 0111...110 (rangkaian angka 1 yang didahului dengan 0 dan diakhiri juga dengan 0), apakah berjumlah genap atau berjumlah ganjil.</p>
+              <p class="left-align">Jika angka 1 di antara dua angka 0 berjumlah genap, tulis sebuah angka 0 pada salah satu sel dari tape mesin Turing.</p>
+              <p class="left-align">Jika angka 1 di antara dua angka 0 berjumlah ganjil, tulis sebuah angka 1 pada salah satu sel dari tape mesin Turing.</p>
+              <p class="left-align">Untuk menyelesaikan masalah komputasi ini, kita buat tiga buah State bagi mesin Turing ini, yaitu Start, Even, dan Odd. Di samping itu kita buat sekumpulan aturan Transisi yang digunakan oleh mesin Turing ini untuk melakukan proses komputasinya. Aturan-aturan Transisi tersebut dapat dituliskan demikian:</p>
+              <p class="left-align">1. Jika mesin Turing berada pada status Start, dan membaca simbol 0 pada Tape, lakukan hal berikut: Pindah status menjadi status Even, Ganti simbol 0 pada Tape dengan Blank (atau Hapus simbol 0 pada Tape), dan Bergerak ke kanan satu sel.</p>
+              <p class="left-align">2. Jika mesin Turing berada pada status Even, dan membaca simbol 1 pada Tape, lakukan hal berikut: Pindah status menjadi status Odd, Ganti simbol 1 pada Tape dengan Blank, dan Bergerak ke kanan satu sel.</p>
+              <p class="left-align">3. Jika mesin Turing berada pada status Odd, dan membaca simbol 1 pada Tape, lakukan hal berikut: Pindah status menjadi Even, Ganti simbol 1 pada Tape dengan Blank, dan Bergerak ke kanan satu sel.</p>
+              <p class="left-align">4. Jika mesin Turing berada pada status Even, dan membaca simbol 0 pada Tape, lakukan hal berikut: Pindah status menjadi Halt, Ganti simbol 0 pada Tape dengan 0, dan tetap pada sel tersebut (tidak perlu berpindah ke kiri maupun ke kanan).</p>
+              <p class="left-align">5. Jika mesin Turing berada pada status Odd, dan membaca simbol 0 pada Tape, lakukan hal berikut: Pindah status menjadi Halt, Ganti simbol 0 pada Tape dengan 1, dan tetap pada sel tersebut.</p>
+              
+              
+
+
+              
+              
+              
+
+
+
+
+                 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+<!-- Kontak Saya -->
+        <section id="contact" class="contact grey lighten-3 scrollspy">
+          <div class="container">
+            <h3 class="light grey-text text-darken-3 center">Kontak Saya</h3>
+            <div class="row">
+              <div class="col m6 s12 ">
+              <div class="card-panel grey darken-2 center white-text">
+                <i class="material-icons medium">email</i>
+                <h5>Email</h5>
+                <p>naufal77febriantama@gmail.com</p>
+
+              </div>
+              <ul class="collection with-header">
+                <li class="collection-header"><h5>INFO UMUM</h5></li>
+                <li class="collection-item">Muh. Naufal Febriantama</li>
+                <li class="collection-item">D121181021</li>
+                <li class="collection-item">Teknik Informatika</li>
+              </ul>
+              </div>
+              <div class="col m6 s12">
+              <div class="card-panel center ">
+              <img class="activator"src="img/portfolio/instagram.png">
+              <h6><a href="https://www.instagram.com/naufalfebriantama/">Instagram</a></h6>
+              </div>
+              <div class="card-panel center small">
+             <img class="activator" src="img/portfolio/facebook.png">
+              <h6><a href="https://www.facebook.com/naufalfebriantama.alfariz?ref=bookmarks">Facebook</a></h6>
+              </div>
+           
+            </div>
+            
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="grey darken-2 white-text center">
+          <p>Teknik Informatika UNHAS. Copyright 2020.</p>
+        </footer>
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <script>
+        const sideNav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sideNav);
+
+        const slider =document.querySelectorAll('.slider');
+        M.Slider.init(slider, {
+          indicators: false,
+          height: 500,
+          transition: 600,
+          interval: 3000
+        });
+
+        const parallax = document.querySelectorAll('.parallax');
+        M.Parallax.init(parallax);
+
+        const materialbox = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(materialbox);
+
+        const scroll = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scroll, {
+          scrollOffset: 50
+        })
+
+       
+
+       
+      </script>
+
+    </body>
+  </html>
+        
